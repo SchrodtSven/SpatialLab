@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="src/P3tite/Autoload.php" colors="true" verbose="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
-  <coverage>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="private/lib/SpatialLab/Application.php" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd" cacheDirectory=".phpunit.cache">
+  <coverage/>
+  <testsuites>
+    <testsuite name="Testing SpatialLab stuff">
+      <directory>./test/</directory>
+    </testsuite>
+  </testsuites>
+  <source>
     <include>
       <directory>./</directory>
     </include>
     <exclude>
       <directory>./src/public</directory>
     </exclude>
-  </coverage>
-  <testsuites>
-    <testsuite name="Testing P3tite stuff">
-      <directory>./test/</directory>
-    </testsuite>
-  </testsuites>
+  </source>
 </phpunit>

@@ -1,8 +1,10 @@
 <?php declare(strict_types=1);
 /**
- * Front controller class 
+ * Class for rendering (“phtml”) templates in alternative PHP syntax 
  * 
  * - parsing request to $controller/$action/$params
+ * 
+ * @see https://www.php.net/manual/en/control-structures.alternative-syntax.php
  * 
  * @author Sven Schrodt<sven@schrodt.club>
  * @link https://github.com/SchrodtSven/SpatialLab
@@ -13,10 +15,7 @@
 
 namespace SpatialLab\App;
 
-class Front
+class Renderer
 {
-    public function __construct()
-    {   
-        echo 'I\'am ' . __CLASS__;
-    }
+     
 }
