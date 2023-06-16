@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 /**
- * router.php - to be used with PHP 8.1 Development Server 
+ * router.php - to be used with PHP Development Server 
  * 
  * - bootstrapping incl. registering AL
  * 

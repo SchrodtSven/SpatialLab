@@ -17,10 +17,19 @@ namespace SpatialLab\App;
 
 final class Renderer
 {
-     private function renderTpl(string $tpl)
+     private function renderTpl(string $tpl): string
      {
         if(!file_exists($tpl)) {
             throw new \InvalidArgumentException('File does not exists: ' . $tpl);
         }
+
+        ob_start();
+        require $tpl;
+        $out = ob_get_contents();
+        ob_end_clean();
+
+        return $out;
      }
+
+
 }
