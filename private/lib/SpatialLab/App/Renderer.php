@@ -2,7 +2,7 @@
 /**
  * Class for rendering (“phtml”) templates in alternative PHP syntax 
  * 
- * - parsing request to $controller/$action/$params
+ * - 
  * 
  * @see https://www.php.net/manual/en/control-structures.alternative-syntax.php
  * 
@@ -15,7 +15,12 @@
 
 namespace SpatialLab\App;
 
-class Renderer
+final class Renderer
 {
-     
+     private function renderTpl(string $tpl)
+     {
+        if(!file_exists($tpl)) {
+            throw new \InvalidArgumentException('File does not exists: ' . $tpl);
+        }
+     }
 }
