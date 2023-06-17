@@ -19,4 +19,14 @@ class Front
     {   
         echo 'I\'am ' . __CLASS__;
     }
+
+    private function route()
+    {
+        // URI-> $CTRL;$ACTN;$PARAMS
+    }
+
+    public function dispatch()
+    {
+        //->$ctrl->$action($params)
+    }
 }

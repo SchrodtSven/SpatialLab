@@ -4,8 +4,6 @@ declare(strict_types=1);
 /**
  * Class handling string contents with OOP interface
  * 
- * @see https://www.php.net/manual/en/control-structures.alternative-syntax.php
- * 
  * @author Sven Schrodt<sven@schrodt.club>
  * @link https://github.com/SchrodtSven/SpatialLab
  * @package SpatialLab
@@ -14,8 +12,7 @@ declare(strict_types=1);
  */
 
 namespace SpatialLab\Internal\Type;
-
-use SebastianBergmann\Timer\Duration;
+use SpatialLab\Internal\Type\ListClass;
 
 class StringClass implements \Stringable
 {
