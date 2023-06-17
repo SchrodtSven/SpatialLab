@@ -108,3 +108,81 @@ Time: 00:00.002, Memory: 22.42 MB
 OK (6 tests, 7 assertions)
 </code>
 </pre>
+.
+├── LICENSE
+├── README.md
+├── dox
+│   └── rfc7946.txt
+├── files.txt
+├── gitit.sh
+├── now.txt
+├── phphttpd
+├── phpunit.xml
+├── private
+│   └── lib
+│       └── SpatialLab
+│           ├── App
+│           │   ├── Front.php
+│           │   ├── Renderer.php
+│           │   ├── RequestHandlerInterface..php
+│           │   ├── ResponseInterface.php
+│           │   └── ServerRequestInterface.php
+│           ├── Application.php
+│           ├── Communication
+│           │   └── Http
+│           │       ├── Request.php
+│           │       └── Response.php
+│           ├── Config
+│           │   └── main_cfg.php
+│           └── Internal
+│               ├── TestClass.php
+│               └── Type
+│                   ├── Dry
+│                   │   ├── ArrayAccessTrait.php
+│                   │   ├── CallbackArrayTrait.php
+│                   │   ├── IteratorTrait.php
+│                   │   ├── MultiByteStringTrait.php
+│                   │   └── StackOperationTrait.php
+│                   ├── ListClass.php
+│                   └── StringClass.php
+├── public
+│   └── index.php
+├── router.php
+├── secret.txt
+└── test
+    ├── App
+    ├── Config
+    ├── FooTest.php
+    └── Internal
+        └── Type
+            └── StringClassTest.php
+
+18 directories, 30 files
+      27 text files.
+classified 23 files      23 unique files.                              
+       5 files ignored.
+
+github.com/AlDanial/cloc v 1.96  T=0.01 s (1539.7 files/s, 219505.6 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Text                             4            679              0           1309
+PHP                             16            242            305            545
+Markdown                         1             21              0            141
+XML                              1              0              0             17
+Bourne Shell                     1              0              6             14
+-------------------------------------------------------------------------------
+SUM:                            23            942            311           2026
+-------------------------------------------------------------------------------
+PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.2.7
+Configuration: /Users/svenschrodt/projects/SpatialLab/phpunit.xml
+
+......                                                              6 / 6 (100%)
+
+Time: 00:00.002, Memory: 22.42 MB
+
+OK (6 tests, 7 assertions)
+</code>
+</pre>
