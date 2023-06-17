@@ -28,12 +28,14 @@ class StringClass implements \Stringable
 
     public function prepend(\Stringable | string $plus): self
     {
+        $this->save();
         $this->content =  (string) $plus . $this->content;
         return $this;
     }
 
     public function append(\Stringable | string $plus): self
     {
+        $this->save();
         $this->content .= (string) $plus;
         return $this;
     }
@@ -50,10 +52,34 @@ class StringClass implements \Stringable
         return $this;
     }
 
+    public function toggle(): self
+    {
+        $tmp = $this->previous;
+        $this->previous = $this->content;
+        $this->content = $tmp;
+        return $this;
+    }
+
     public function replace(array|string $find, array|string $replace): self
     {
+        $this->save();
         $this->content = str_replace($find, $replace, $this->content);
         return $this;
+    }
+
+    public function raw(): string 
+    {
+        return $this->content;
+    }
+    
+    public function previous(): string
+    {
+        return $this->previous;
+    }
+
+    public function length(): int
+    {
+        return mb_strlen($this->content);
     }
 
     public function __toString(): string

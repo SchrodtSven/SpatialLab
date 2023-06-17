@@ -16,7 +16,7 @@ use SpatialLab\Internal\Type\ListClass;
 trait SubSplitStringTrait
 {
 
-    public function splitBy( \Stringable | string $delimiter = ' '): ListClass
+    public function splitBy( \Stringable | string $separator = ' '): ListClass
     {
         return new ListClass(explode($separator, $this->content));
     }

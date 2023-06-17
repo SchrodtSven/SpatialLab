@@ -70,6 +70,26 @@ class StringClassTest extends TestClass
 
     }
 
+    public function testRollbackSaveToggle(): void
+    {
+        $a = 'FOO';
+        $plus = 'bar';
+
+        $testString = new StringClass($a);
+        $this->assertSame((string) $testString, $a);
+        $testString->append($plus);
+        $this->assertSame((string) $testString, $a . $plus);
+        $testString->rollback();
+        $this->assertSame($testString->raw(), $a);
+        $testString->prepend($plus);
+        $this->assertSame($testString->raw(), $plus . $a);
+        $testString->toggle();
+        $this->assertSame($testString->previous(), $plus . $a);
+        $this->assertSame($testString->raw(), $a);
+        $testString->rollback();
+        $this->assertSame($testString->raw(), $plus . $a);
+    }
+
     public static function prependProvider(): array
     {
         return [

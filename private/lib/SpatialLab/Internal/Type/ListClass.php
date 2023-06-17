@@ -49,9 +49,17 @@ class ListClass implements \Iterator, \ArrayAccess, \Countable
         return $this->content;
     }
 
+    public function toggle(): self
+    {
+        $tmp = $this->previous;
+        $this->previous = $this->content;
+        $this->content = $tmp;
+        return $this;
+    }
+    
     public function previous(): array
     {
-        return $this->previous();
+        return $this->previous;
     }
 
     public function count(): int
