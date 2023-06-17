@@ -1,10 +1,6 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 /**
- * Class handling string contents with OOP interface
- * 
- * @see https://www.php.net/manual/en/control-structures.alternative-syntax.php
+ * Testing StringClass (incl. used traits)
  * 
  * @author Sven Schrodt<sven@schrodt.club>
  * @link https://github.com/SchrodtSven/SpatialLab
@@ -41,6 +37,8 @@ class StringClassTest extends TestClass
     {
         $foo = new StringClass($original);
         $this->assertSame((string) $foo->prepend($plus), $result);
+        $bar = new StringClass;
+        $this->assertSame(0, $bar->length());
 
     }
 
@@ -109,8 +107,8 @@ class StringClassTest extends TestClass
     {
         return [
             ['FooBar', 'Bar', '', 'Foo'],
+            ['FooBar', 'Bar', 'BarFoo', 'FooBarFoo'],
             ['CatDog', 'og', '', 'CatD'],
-
         ];
     }
 }

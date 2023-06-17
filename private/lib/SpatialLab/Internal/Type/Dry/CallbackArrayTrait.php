@@ -18,7 +18,7 @@ trait CallbackArrayTrait
    
     public function walk(callable $callback): self
     {
-        array_walk($this->current, $callback);
+        array_walk($this->content, $callback);
         return $this;
     }
 

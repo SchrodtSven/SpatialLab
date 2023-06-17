@@ -39,7 +39,7 @@ trait MultiByteStringTrait
          */
         public function convertCase(int $mode = \MB_CASE_TITLE, ?string $encoding = null): self
         {
-            $this->current = mb_convert_case($this->current, $mode, $encoding);
+            $this->content = mb_convert_case($this->content, $mode, $encoding);
             return $this;
         }
         
@@ -52,7 +52,7 @@ trait MultiByteStringTrait
          */
         public function upper(?string $encoding = null): self
         {
-            $this->current = mb_strtoupper($this->current, $encoding);
+            $this->content = mb_strtoupper($this->content, $encoding);
             return $this;
         }
         
@@ -65,7 +65,7 @@ trait MultiByteStringTrait
          */
         public function lower(?string $encoding = null): self
         {
-            $this->current = mb_strtolower($this->current, $encoding);
+            $this->content = mb_strtolower($this->content, $encoding);
             return $this;
         }
         
@@ -136,7 +136,7 @@ trait MultiByteStringTrait
          */
         public function parseStr(string $string): mixed
         {
-            mb_parse_str($this->current, $result);
+            mb_parse_str($this->content, $result);
             return $result;
             
         }
@@ -144,7 +144,7 @@ trait MultiByteStringTrait
 
         public function outputHandler(string $string, int $status): self
         {
-            $this->current = mb_output_handler($this->current, $status);
+            $this->content = mb_output_handler($this->content, $status);
             return $this;
         }
         
@@ -158,7 +158,7 @@ trait MultiByteStringTrait
 
         public function strlen(string $string, ?string $encoding): int
         {
-            return mb_strlen($this->current, $encoding);
+            return mb_strlen($this->content, $encoding);
             
         }
         
@@ -172,7 +172,7 @@ trait MultiByteStringTrait
          */
         public function pos(string $needle, int $offset = 0, ?string $encoding = null): int|false
         {
-            return mb_strpos($needle, $this->current, $offset, $encoding);
+            return mb_strpos($needle, $this->content, $offset, $encoding);
             
         }
         
@@ -235,41 +235,41 @@ trait MultiByteStringTrait
 
         public function substr(int $start, ?int $length, ?string $encoding = null): self
         {
-            return new self(mb_substr($this->current, $start, $length, $encoding));
+            return new self(mb_substr($this->content, $start, $length, $encoding));
         }
         
 
         public function cut(int $start, ?int $length, ?string $encoding = null): self
         {
-            return new self(mb_strcut($this->current, $start, $length, $encoding));
+            return new self(mb_strcut($this->content, $start, $length, $encoding));
     
         }
         
 
         public function width(string $string, ?string $encoding = null): int
         {
-            return mb_strwidth($this->current, $encoding);
+            return mb_strwidth($this->content, $encoding);
             
         }
         
 
         public function trimWidth(string $string, int $start, int $width, string $trim_marker = '', ?string $encoding  = null): self
         {
-            $this->current = mb_strimwidth($this->current, $start, $width, $trim_marker = '', $encoding);
+            $this->content = mb_strimwidth($this->content, $start, $width, $trim_marker = '', $encoding);
             return $this;
         }
         
 
         public function convert_encoding(string $toEncoding, array|string|null $fromEncoding = null): self
         {
-            $this->content = mb_convert_encoding($this->current, $toEncoding, $fromEncoding);
+            $this->content = mb_convert_encoding($this->content, $toEncoding, $fromEncoding);
             return $this;
         }
         
 
         public function detect_encoding(array|string|null $encodings = null, bool $strict = false): string|false
         {
-            return mb_detect_encoding($this->current,$encodings, $strict);
+            return mb_detect_encoding($this->content,$encodings, $strict);
             
         }
         
@@ -290,21 +290,21 @@ trait MultiByteStringTrait
 
         public function convertKana(string $string, string $mode = 'KV', ?string $encoding  = null): self
         {
-            $this->current = mb_convert_kana($this->current, $mode, $encoding);
+            $this->content = mb_convert_kana($this->content, $mode, $encoding);
             return $this;
         }
         
 
         public function encodeMimeheader(?string $charset, ?string $transferEncoding, string $newline = "\n", int $indent = 0): self
         {
-            $this->current = mb_encode_mimeheader($this->current, $charset, $transferEncoding, $newline, $indent);
+            $this->content = mb_encode_mimeheader($this->content, $charset, $transferEncoding, $newline, $indent);
             return $this;
         }
         
 
         public function decodeMimeheader(string $string): self
         {
-            $this->current = mb_decode_mimeheader($this->current);
+            $this->content = mb_decode_mimeheader($this->content);
             return $this;
         }
         
@@ -318,7 +318,7 @@ trait MultiByteStringTrait
 
         public function encodeNumericentity(string $string, array $map, ?string $encoding = null, bool $hex = false): self
         {
-            $this->current = mb_encode_numericentity($this->current, $map, $encoding, $hex);
+            $this->content = mb_encode_numericentity($this->content, $map, $encoding, $hex);
             return $this;
         }
       
@@ -345,56 +345,56 @@ trait MultiByteStringTrait
 
         public function regexSetOptions(?string $options): self
         {
-            $this->current = mb_regex_set_options($options);
+            $this->content = mb_regex_set_options($options);
             return $this;
         }
         
         // @FIXME
         public function regex(string $pattern, &$matches): bool
         {
-            return mb_ereg($this->current, $matches);
+            return mb_ereg($this->content, $matches);
             
         }
         
         // @FIXME
         public function regexi(string $pattern, &$matches): bool
         {
-            return mb_eregi($pattern, $this->current, $matches);
+            return mb_eregi($pattern, $this->content, $matches);
             
         }
         
 
         public function regexReplace(string $pattern, string $replacement, string $string, ?string $options = null): self
         {
-            $this->current = mb_ereg_replace($pattern,$replacement, $this->current, $options);
+            $this->content = mb_ereg_replace($pattern,$replacement, $this->content, $options);
             return $this;
         }
         
 
         public function regexReplaceCallback(string $pattern, callable $callback, string $string, ?string $options = null): string|false|null
         {
-            return mb_ereg_replace_callback($pattern,$callback, $this->current, $options);
+            return mb_ereg_replace_callback($pattern,$callback, $this->content, $options);
             
         }
         
 
         public function regexiReplace(string $pattern, $replacement, string $string, ?string $options = null): string|false|null
         {
-            return mb_eregi_replace($pattern, $replacement, $this->current, $options);
+            return mb_eregi_replace($pattern, $replacement, $this->content, $options);
             
         }
         
 
         public function split(string $pattern, int $limit = -1): array|false
         {
-            return mb_split($pattern, $this->current, $limit);
+            return mb_split($pattern, $this->content, $limit);
             
         }
         
 
         public function regexMatch(string $pattern, string $string, ?string $options = null): bool
         {
-            return mb_ereg_match($pattern, $this->current, $options);
+            return mb_ereg_match($pattern, $this->content, $options);
             
         }
         
@@ -422,7 +422,7 @@ trait MultiByteStringTrait
 
         public function regexSearchInit(?string $pattern, ?string $options = null): bool
         {
-            return mb_ereg_search_init($this->current, $pattern, $options);
+            return mb_ereg_search_init($this->content, $pattern, $options);
             
         }
         

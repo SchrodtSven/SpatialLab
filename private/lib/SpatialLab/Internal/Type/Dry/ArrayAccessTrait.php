@@ -21,26 +21,26 @@ trait ArrayAccessTrait
 
     public function offsetGet($offset): mixed
     {
-        return $this->current[$offset] ?? null;
+        return $this->content[$offset] ?? null;
     }
 
     public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
-            $this->current[] = $value;
+            $this->content[] = $value;
         } else {
-            $this->current[$offset] = $value;
+            $this->content[$offset] = $value;
         }
     }
 
     public function offsetExists($offset): bool
     {
-        return isset($this->current[$offset]);
+        return isset($this->content[$offset]);
     }
 
     public function offsetUnset($offset): void
     {
-        unset($this->current[$offset]);
+        unset($this->content[$offset]);
     }
 
 }

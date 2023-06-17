@@ -66,4 +66,17 @@ class ListClass implements \Iterator, \ArrayAccess, \Countable
     {
         return count($this->content);
     }
+
+    // @FIXME !!!
+    public function trim(): self
+    {
+        
+        if(empty($this->content[$this->count()-1]))
+            $this->pop();
+    
+        if(empty($this->content[0]))
+            $this->shift();
+
+        return $this;
+    }
 }

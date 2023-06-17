@@ -22,7 +22,7 @@ trait StackOperationTrait
      */   
     public function push(mixed $value): self
     {
-        array_push($this->current, $value);
+        array_push($this->content, $value);
         return $this;
     }
    
@@ -33,7 +33,7 @@ trait StackOperationTrait
      */
     public function pop(): mixed
     {
-        return array_pop($this->current);
+        return array_pop($this->content);
     }
  
     /**
@@ -44,7 +44,7 @@ trait StackOperationTrait
      */
     public function unshift(mixed $value): self
     {
-        array_unshift($this->current, $value);
+        array_unshift($this->content, $value);
         return $this;
     }
     /**
@@ -54,7 +54,7 @@ trait StackOperationTrait
      */
     public function shift(): mixed
     {
-        return array_shift($this->current);
+        return array_shift($this->content);
     }
 
     /**
@@ -64,7 +64,7 @@ trait StackOperationTrait
      */
     public function firstKey(): string|int|null
     {
-        return array_key_first($this->current);
+        return array_key_first($this->content);
     }
 
     /**
@@ -74,6 +74,6 @@ trait StackOperationTrait
      */
     public function lastKey(): string|int|null
     {
-        return array_key_last($this->current);
+        return array_key_last($this->content);
     }
 }
