@@ -24,10 +24,10 @@ class ListClass implements \Iterator, \ArrayAccess, \Countable
     use StackOperationTrait;
     use IteratorTrait;
     use CallbackArrayTrait;
-    
+
     protected array $previous = [];
 
-    public function __construct(protected string $content = [])
+    public function __construct(protected array $content = [])
     {
     }
 

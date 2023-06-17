@@ -13,13 +13,17 @@ declare(strict_types=1);
 
 namespace SpatialLab\Internal\Type;
 use SpatialLab\Internal\Type\ListClass;
+use SpatialLab\Internal\Type\Dry\SubSplitStringTrait;
 
 class StringClass implements \Stringable
 {
+    use SubSplitStringTrait;
+
     protected string $previous = '';
 
     public function __construct(protected string $content = '')
     {
+        
     }
 
     public function prepend(\Stringable | string $plus): self
