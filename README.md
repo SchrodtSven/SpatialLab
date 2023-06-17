@@ -31,86 +31,6 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 
  <pre>
  <code>
-
- .
-├── LICENSE
-├── README.md
-├── dox
-│   └── rfc7946.txt
-├── files.txt
-├── gitit.sh
-├── now.txt
-├── phphttpd
-├── phpunit.xml
-├── private
-│   └── lib
-│       └── SpatialLab
-│           ├── App
-│           │   ├── Front.php
-│           │   ├── Renderer.php
-│           │   ├── RequestHandlerInterface..php
-│           │   ├── ResponseInterface.php
-│           │   └── ServerRequestInterface.php
-│           ├── Application.php
-│           ├── Communication
-│           │   └── Http
-│           │       ├── Request.php
-│           │       └── Response.php
-│           ├── Config
-│           │   └── main_cfg.php
-│           └── Internal
-│               ├── TestClass.php
-│               └── Type
-│                   ├── Dry
-│                   │   ├── ArrayAccessTrait.php
-│                   │   ├── CallbackArrayTrait.php
-│                   │   ├── IteratorTrait.php
-│                   │   ├── MultiByteStringTrait.php
-│                   │   ├── StackOperationTrait.php
-│                   │   └── SubSplitStringTrait.php
-│                   ├── ListClass.php
-│                   └── StringClass.php
-├── public
-│   └── index.php
-├── router.php
-├── secret.txt
-└── test
-    ├── App
-    ├── Config
-    ├── FooTest.php
-    └── Internal
-        └── Type
-            └── StringClassTest.php
-
-18 directories, 31 files
-      30 text files.
-classified 26 files      26 unique files.                              
-       5 files ignored.
-
-github.com/AlDanial/cloc v 1.96  T=0.02 s (1714.9 files/s, 219048.3 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Text                             4            679              0           1309
-PHP                             19            261            333            615
-Markdown                         1             16              0             71
-XML                              1              0              0             17
-Bourne Shell                     1              0              6             14
--------------------------------------------------------------------------------
-SUM:                            26            956            339           2026
--------------------------------------------------------------------------------
-PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 8.2.7
-Configuration: /Users/svenschrodt/projects/SpatialLab/phpunit.xml
-
-.......                                                             7 / 7 (100%)
-
-Time: 00:00.002, Memory: 22.42 MB
-
-OK (7 tests, 14 assertions)
-</code>
-</pre>
 .
 ├── LICENSE
 ├── README.md
@@ -167,17 +87,17 @@ OK (7 tests, 14 assertions)
 classified 27 files      27 unique files.                              
        5 files ignored.
 
-github.com/AlDanial/cloc v 1.96  T=0.01 s (1826.9 files/s, 233171.0 lines/s)
+github.com/AlDanial/cloc v 1.96  T=0.01 s (2248.3 files/s, 280292.0 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Text                             4            679              0           1309
 PHP                             20            270            341            643
-Markdown                         1             22              0            145
+Markdown                         1             15              0             72
 XML                              1              0              0             17
 Bourne Shell                     1              0              6             14
 -------------------------------------------------------------------------------
-SUM:                            27            971            347           2128
+SUM:                            27            964            347           2055
 -------------------------------------------------------------------------------
 PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
 
