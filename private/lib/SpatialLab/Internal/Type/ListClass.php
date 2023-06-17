@@ -56,7 +56,7 @@ class ListClass implements \Iterator, \ArrayAccess, \Countable
         $this->content = $tmp;
         return $this;
     }
-    
+     
     public function previous(): array
     {
         return $this->previous;
