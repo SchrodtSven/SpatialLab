@@ -77,6 +77,7 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 │                   ├── Handler
 │                   │   └── Sherlock.php
 │                   ├── ListClass.php
+│                   ├── Meta.php
 │                   └── StringClass.php
 ├── public
 │   └── index.php
@@ -90,110 +91,22 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
             ├── ListClassTest.php
             └── StringClassTest.php
 
-20 directories, 38 files
-      38 text files.
-classified 32 files      32 unique files.                              
+20 directories, 39 files
+      39 text files.
+classified 33 files      33 unique files.                              
        5 files ignored.
 
-github.com/AlDanial/cloc v 1.96  T=0.02 s (1655.5 files/s, 199275.5 lines/s)
+github.com/AlDanial/cloc v 1.96  T=0.02 s (1782.9 files/s, 208764.3 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Text                             4            679              0           1309
-PHP                             25            333            489            889
-Markdown                         1             21              0             94
-XML                              1              0              0             17
-Bourne Shell                     1              0              9             12
--------------------------------------------------------------------------------
-SUM:                            32           1033            498           2321
--------------------------------------------------------------------------------
-PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 8.2.7
-Configuration: /Users/svenschrodt/projects/SpatialLab/phpunit.xml
-
-.........                                                           9 / 9 (100%)
-
-Time: 00:00.003, Memory: 22.42 MB
-
-OK (9 tests, 19 assertions)
-</code>
-</pre>
-.
-├── LICENSE
-├── README.md
-├── README.md.tpl
-├── dox
-│   └── rfc7946.txt
-├── files.txt
-├── gitit.sh
-├── main_cfg.php.tpl
-├── now.txt
-├── phphttpd
-├── phpunit.xml
-├── private
-│   └── lib
-│       └── SpatialLab
-│           ├── App
-│           │   ├── Action.php
-│           │   ├── Ctlr
-│           │   │   └── IndexCtlr.php
-│           │   ├── Front.php
-│           │   ├── Renderer.php
-│           │   ├── RequestHandlerInterface..php
-│           │   ├── ResponseInterface.php
-│           │   └── ServerRequestInterface.php
-│           ├── Application.php
-│           ├── Communication
-│           │   └── Http
-│           │       ├── Request.php
-│           │       └── Response.php
-│           ├── Config
-│           │   ├── Main.php
-│           │   └── main_cfg.php
-│           └── Internal
-│               ├── TestClass.php
-│               └── Type
-│                   ├── Dry
-│                   │   ├── ArrayAccessTrait.php
-│                   │   ├── CallbackArrayTrait.php
-│                   │   ├── CaseStringTrait.php
-│                   │   ├── IteratorTrait.php
-│                   │   ├── MultiByteStringTrait.php
-│                   │   ├── StackOperationTrait.php
-│                   │   └── SubSplitStringTrait.php
-│                   ├── Handler
-│                   │   └── Sherlock.php
-│                   ├── ListClass.php
-│                   └── StringClass.php
-├── public
-│   └── index.php
-├── router.php
-└── test
-    ├── App
-    ├── Config
-    ├── FooTest.php
-    └── Internal
-        └── Type
-            ├── ListClassTest.php
-            └── StringClassTest.php
-
-20 directories, 38 files
-      38 text files.
-classified 32 files      32 unique files.                              
-       5 files ignored.
-
-github.com/AlDanial/cloc v 1.96  T=0.01 s (2198.7 files/s, 269616.2 lines/s)
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Text                             4            679              0           1309
-PHP                             25            333            489            889
-Markdown                         1             21              0            162
+PHP                             26            338            498            902
+Markdown                         1             15              0             81
 XML                              1              0              0             17
 Bourne Shell                     1              4              6             15
 -------------------------------------------------------------------------------
-SUM:                            32           1037            495           2392
+SUM:                            33           1036            504           2324
 -------------------------------------------------------------------------------
 PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
 
