@@ -2,3 +2,8 @@
 secret.txt
 main_cfg.php
 .phpunit.cache
+archive/
+main_cfg.php.tpl
+README.md.tpl
+tmpREADME
+

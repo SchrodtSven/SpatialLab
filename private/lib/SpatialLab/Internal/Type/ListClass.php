@@ -79,4 +79,11 @@ class ListClass implements \Iterator, \ArrayAccess, \Countable
 
         return $this;
     }
+
+    public function merge(array | ListClass $data): self
+    {
+        $data = (is_array($data)) ? $data : $data->raw();
+        $this->content = array_merge($this->content, $data);
+        return $this;
+    }
 }

@@ -14,10 +14,14 @@ declare(strict_types=1);
 namespace SpatialLab\Internal\Type;
 use SpatialLab\Internal\Type\ListClass;
 use SpatialLab\Internal\Type\Dry\SubSplitStringTrait;
+use SpatialLab\Internal\Type\Dry\MultiByteStringTrait;
+use SpatialLab\Internal\Type\Dry\CaseStringTrait;
 
 class StringClass implements \Stringable
 {
     use SubSplitStringTrait;
+    use MultiByteStringTrait;
+    use CaseStringTrait;
 
     protected string $previous = '';
 

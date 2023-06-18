@@ -52,6 +52,17 @@ final class Application
         });
     }
 
+    /**
+     * Constructor function with workaround for 
+     */
+    public function __construct()
+    {
+        // workaround for current PHP Development server -> if route eq '/'
+        if(str_ends_with(getcwd(), 'public')) {
+            chdir(('../'));    
+        }
+
+    }
   
 }
 (new Application())->bootstrap();

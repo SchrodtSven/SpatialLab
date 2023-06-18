@@ -20,4 +20,19 @@ trait SubSplitStringTrait
     {
         return new ListClass(explode($separator, $this->content));
     }
+
+    public function starts(\Stringable | string $str): bool
+    {
+        return (str_starts_with($this->content, (string) $str));
+    }
+
+    public function ends(\Stringable | string $str): bool
+    {
+        return (str_ends_with($this->content, (string) $str));
+    }
+
+    public function contains(\Stringable | string $str): bool
+    {
+        return (str_contains($this->content, (string) $str));
+    }
 }
