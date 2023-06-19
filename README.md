@@ -3,11 +3,6 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 
 
 
-
- 
-
-
-
 ## Appendix
 
 ### Development environment 
@@ -20,7 +15,7 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
  - OS: Darwin 22.3.0 Darwin Kernel Version 22.3.0; RELEASE_ARM64_T8103 arm64
  - OS: Linux raspberrypi 5.10.17-v7l+ #1403 SMP Mon Feb 22 11:33:35 GMT 2021 armv7l GNU/Linux
  - IDE: Visual Studio Code; Version: 1.79.1 (Universal)
- - PHP: 8.2.7 (NTS); Zend Engine v4.2.7 with Xdebug v3.2.1with Zend OPcache v8.2.7
+ - PHP: 8.2.7 (NTS); Zend Engine v4.2.7 with Xdebug v3.2.1 with Zend OPcache v8.2.7
  - Unit testing: PHPUnit 10.2.1 
  - Java: openjdk version "11.0.18" 2023-01-17; OpenJDK Runtime Environment  & OpenJDK Server VM
  - RDBMS: Sqlite version 3.39.5
@@ -80,7 +75,8 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 │                   ├── Meta.php
 │                   └── StringClass.php
 ├── public
-│   └── index.php
+│   ├── index.php
+│   └── mapbox.php
 ├── router.php
 └── test
     ├── App
@@ -88,35 +84,37 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
     ├── FooTest.php
     └── Internal
         └── Type
+            ├── Handler
+            │   └── SherlockTest.php
             ├── ListClassTest.php
             └── StringClassTest.php
 
-20 directories, 39 files
-      39 text files.
-classified 33 files      33 unique files.                              
+21 directories, 41 files
+      41 text files.
+classified 35 files      35 unique files.                              
        5 files ignored.
 
-github.com/AlDanial/cloc v 1.96  T=0.02 s (1782.9 files/s, 208764.3 lines/s)
+github.com/AlDanial/cloc v 1.96  T=0.02 s (1707.8 files/s, 194252.1 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Text                             4            679              0           1309
-PHP                             26            338            498            902
-Markdown                         1             15              0             81
+PHP                             28            358            523            976
+Markdown                         1             10              0             84
 XML                              1              0              0             17
 Bourne Shell                     1              4              6             15
 -------------------------------------------------------------------------------
-SUM:                            33           1036            504           2324
+SUM:                            35           1051            529           2401
 -------------------------------------------------------------------------------
 PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 8.2.7
 Configuration: /Users/svenschrodt/projects/SpatialLab/phpunit.xml
 
-.........                                                           9 / 9 (100%)
+.....................                                             21 / 21 (100%)
 
-Time: 00:00.003, Memory: 22.42 MB
+Time: 00:00.007, Memory: 22.42 MB
 
-OK (9 tests, 19 assertions)
+OK (21 tests, 34 assertions)
 </code>
 </pre>
