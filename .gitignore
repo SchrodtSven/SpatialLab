@@ -6,4 +6,5 @@ archive/
 main_cfg.php.tpl
 README.md.tpl
 tmpREADME
+phpunit
 

@@ -22,6 +22,7 @@ class IndexCtlr extends Action
    public function defaultActn(): void
    {
         echo "default action called within " . self::class;
+        echo '<h2>Parameters</h2>';
         echo '<pre> ' . var_dump($this->front->getParams());
    }
 }

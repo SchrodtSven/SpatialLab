@@ -32,10 +32,8 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 ├── README.md.tpl
 ├── dox
 │   └── rfc7946.txt
-├── files.txt
 ├── gitit.sh
 ├── main_cfg.php.tpl
-├── now.txt
 ├── phphttpd
 ├── phpunit.xml
 ├── private
@@ -76,7 +74,8 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 │                   └── StringClass.php
 ├── public
 │   ├── index.php
-│   └── mapbox.php
+│   ├── mapbox.php
+│   └── test.html
 ├── router.php
 └── test
     ├── App
@@ -89,22 +88,23 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
             ├── ListClassTest.php
             └── StringClassTest.php
 
-21 directories, 41 files
-      41 text files.
-classified 35 files      35 unique files.                              
+21 directories, 40 files
+      40 text files.
+classified 34 files      34 unique files.                              
        5 files ignored.
 
-github.com/AlDanial/cloc v 1.96  T=0.02 s (1707.8 files/s, 194252.1 lines/s)
+github.com/AlDanial/cloc v 1.96  T=0.02 s (1706.1 files/s, 199217.4 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Text                             4            679              0           1309
-PHP                             28            358            523            976
-Markdown                         1             10              0             84
+Text                             2            678              0           1286
+PHP                             28            358            523            978
+Markdown                         1             10              0             83
 XML                              1              0              0             17
 Bourne Shell                     1              4              6             15
+HTML                             1              1              0             11
 -------------------------------------------------------------------------------
-SUM:                            35           1051            529           2401
+SUM:                            34           1051            529           2390
 -------------------------------------------------------------------------------
 PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
 
@@ -113,7 +113,7 @@ Configuration: /Users/svenschrodt/projects/SpatialLab/phpunit.xml
 
 .....................                                             21 / 21 (100%)
 
-Time: 00:00.007, Memory: 22.42 MB
+Time: 00:00.006, Memory: 22.42 MB
 
 OK (21 tests, 34 assertions)
 </code>
