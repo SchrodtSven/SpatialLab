@@ -23,6 +23,7 @@ class IndexCtlr extends Action
    {
         echo "default action called within " . self::class;
         echo '<h2>Parameters</h2>';
-        echo '<pre> ' . var_dump($this->front->getParams());
+         echo '<pre> ' . var_dump($this->front->getParams());
+         echo $this->front->getRequest()->getMethod();
    }
 }

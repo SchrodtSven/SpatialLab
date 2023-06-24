@@ -31,6 +31,7 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 ├── README.md
 ├── README.md.tpl
 ├── dox
+│   ├── iah.jpg
 │   └── rfc7946.txt
 ├── gitit.sh
 ├── main_cfg.php.tpl
@@ -44,10 +45,7 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 │           │   ├── Ctlr
 │           │   │   └── IndexCtlr.php
 │           │   ├── Front.php
-│           │   ├── Renderer.php
-│           │   ├── RequestHandlerInterface..php
-│           │   ├── ResponseInterface.php
-│           │   └── ServerRequestInterface.php
+│           │   └── Renderer.php
 │           ├── Application.php
 │           ├── Communication
 │           │   └── Http
@@ -75,6 +73,7 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 ├── public
 │   ├── index.php
 │   ├── mapbox.php
+│   ├── mb_pop.php
 │   └── test.html
 ├── router.php
 └── test
@@ -88,23 +87,23 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
             ├── ListClassTest.php
             └── StringClassTest.php
 
-21 directories, 40 files
-      40 text files.
-classified 34 files      34 unique files.                              
-       5 files ignored.
+21 directories, 39 files
+      41 text files.
+classified 35 files      35 unique files.                              
+       6 files ignored.
 
-github.com/AlDanial/cloc v 1.96  T=0.02 s (1706.1 files/s, 199217.4 lines/s)
+github.com/AlDanial/cloc v 1.96  T=0.02 s (1770.5 files/s, 211149.3 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Text                             2            678              0           1286
-PHP                             28            358            523            978
-Markdown                         1             10              0             83
+PHP                             29            365            541           1157
+Markdown                         1             10              0             82
 XML                              1              0              0             17
 Bourne Shell                     1              4              6             15
-HTML                             1              1              0             11
+HTML                             1              1              0             12
 -------------------------------------------------------------------------------
-SUM:                            34           1051            529           2390
+SUM:                            35           1058            547           2569
 -------------------------------------------------------------------------------
 PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
 

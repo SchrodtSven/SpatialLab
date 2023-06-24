@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 /**
- * Class detecting type|value|limits incl. converting data types    for given data structure
+ * Class (dete|inspe)cting type|value|limits incl. converting data types    for given data structure
  * 
  * @author Sven Schrodt<sven@schrodt.club>
  * @link https://github.com/SchrodtSven/SpatialLab

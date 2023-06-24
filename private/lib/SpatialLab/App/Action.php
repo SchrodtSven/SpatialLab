@@ -31,5 +31,6 @@ abstract class Action
         echo static::class . ' called ' . $name . ' actually it is <code>Action::__call</code> <i>pretending to be</i> <code><b>' . $name . '</b></code>' ;       
         echo '<h2>Parameters</h2>';
         echo '<pre> ' . var_dump($this->front->getParams());
+        echo $this->front->getRequest()->getMethod();
     }
 }
