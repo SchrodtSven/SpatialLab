@@ -72,8 +72,6 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
 │                   └── StringClass.php
 ├── public
 │   ├── index.php
-│   ├── mapbox.php
-│   ├── mb_pop.php
 │   └── test.html
 ├── router.php
 └── test
@@ -87,23 +85,23 @@ Tiny collection of code (mainly: PHP 8.2+, HTML, CSS, ECMAScript) handling  “s
             ├── ListClassTest.php
             └── StringClassTest.php
 
-21 directories, 39 files
-      41 text files.
-classified 35 files      35 unique files.                              
+21 directories, 37 files
+      39 text files.
+classified 33 files      33 unique files.                              
        6 files ignored.
 
-github.com/AlDanial/cloc v 1.96  T=0.02 s (1738.4 files/s, 208066.2 lines/s)
+github.com/AlDanial/cloc v 1.96  T=0.02 s (1706.2 files/s, 204798.2 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 Text                             2            678              0           1286
-PHP                             29            367            541           1170
-Markdown                         1             10              0             82
+PHP                             27            355            523            974
+Markdown                         1             10              0             80
 XML                              1              0              0             17
 Bourne Shell                     1              4              6             15
 HTML                             1              1              0             12
 -------------------------------------------------------------------------------
-SUM:                            35           1060            547           2582
+SUM:                            33           1048            529           2384
 -------------------------------------------------------------------------------
 PHPUnit 10.2.1 by Sebastian Bergmann and contributors.
 
