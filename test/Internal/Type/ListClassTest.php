@@ -31,4 +31,19 @@ class ListClassTest extends TestClass
         $a->trim();
         $this->assertSame($a->count(), 2);
     }
+
+    public function testStackOps(): void
+    {
+        $tmp = new ListClass([2, 3, 66, 8]);
+        $tmp->push(999);
+        $this->assertTrue(count($tmp) === 5);
+        $this->assertSame(999, $tmp->pop()); 
+        $this->assertTrue(count($tmp) === 4);
+        $tmp->unshift(888);
+        $this->assertTrue(count($tmp) === 5);
+        $this->assertTrue($tmp->shift() === 888);  
+        $this->assertTrue($tmp->firstKey() === 0);
+        $this->assertTrue($tmp->lastKey() === count($tmp) -1);
+    }
+
 }
